@@ -1,5 +1,0 @@
-OPSInstaller/controller/octavia-openrc.sh:5:export OS_PASSWORD=OCTAVIA_PASS
-OPSInstaller/Deploy-2nodes-controller/Deploy-2nodes-38-USER-octavia-endpoints.sh:12:openstack user create --domain default --password OCTAVIA_PASS octavia
-OPSInstaller/Deploy-2nodes-controller/octavia-openrc.sh:5:export OS_PASSWORD=OCTAVIA_PASS
-OPSInstaller/network/exe-stage43-USER-octavia-endpoints.sh:12:openstack user create --domain default --password OCTAVIA_PASS octavia
-OPSInstaller/network/octavia-openrc.sh:5:export OS_PASSWORD=OCTAVIA_PASS
