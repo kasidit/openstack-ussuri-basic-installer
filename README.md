@@ -1,4 +1,4 @@
-# openstack-queens-installer
+# openstack-ussuri-basic-installer
 
 Copyright 2018 Kasidit Chanchio 
 
@@ -6,7 +6,7 @@ Author: กษิดิศ ชาญเชี่ยว <br>
 Contact: kasiditchanchio@gmail.com <br>
 
 <p>
-<h2>Tutorial: การติดตั้งระบบ OpenStack Queens แบบ Multi-node & DVR ด้วย installation scripts บน ubuntu 16.04 </h2> <br>
+<h2>Tutorial: การติดตั้งระบบ OpenStack Ussuri แบบ Multi-node & DVR ด้วย installation scripts บน ubuntu 20.04 </h2> <br>
 <p>
 <h3>Notes:</h3><br> 
 This repo contains scripts for OPenStack ussuri installation on Ubuntu 20.04. The OpenStack components 
@@ -26,9 +26,9 @@ recently. If you want to use it, we have to rewirite and test it before deployme
       </ul>
  <li> 2. <a href="#part2">ส่วนที่ 2: ติดตั้งด้วย scripts</a> 
       <ul>
-       <li> <a href="#downloadinstaller">2.1 ดาวน์โหลด openstack-queens-installer scripts</a>
+       <li> <a href="#downloadinstaller">2.1 ดาวน์โหลด openstack-ussuri-basic-installer scripts</a>
        <li> <a href="#paramrc">2.2 กำหนดค่าพารามีเตอร์สำหรับการติดตั้ง </a>
-       <li> <a href="#usescript">2.3 ติดตั้ง OpenStack queens ด้วย scripts </a> 
+       <li> <a href="#usescript">2.3 ติดตั้ง OpenStack ด้วย scripts </a> 
        <li> <a href="#addnodes">2.4 การเพิ่ม compute node ด้วย scripts </a>
       </ul>
  <li> 3. <a href="#part3">ส่วนที่ 3: การเพิ่มเครื่องจริงเป็น compute node </a> 
@@ -42,14 +42,14 @@ recently. If you want to use it, we have to rewirite and test it before deployme
 <p><p>
 ในคู่มือนี้เราจะแนะนำการติดตั้งบนเครื่อง host จำนวนหนึ่งซึ่งมีลักษณะดังนี้
 <ul>
-  <li>เป็น host ที่ถูกสร้างขึ้นด้วย KVM hypervisor บนเครื่อง physical host (Ubuntu 16.04) เดียวกันจำนวน 4 เครื่อง
+  <li>เป็น host ที่ถูกสร้างขึ้นด้วย KVM hypervisor บนเครื่อง physical host (Ubuntu 20.04) เดียวกันจำนวน 4 เครื่อง
   <li>เป็น host ที่ถูกสร้างขึ้นด้วย virtualbox (vbox) hypervisor บนเครื่อง physical host (Windows 10) เดียวกันจำนวน 4 เครื่อง
 </ul>
 <p><p>
 <p>
  <i><a id="kvmhost"><h4>1.1 การเตรียมเครื่องเพื่อติดตั้งบน KVM Virtual Machine (VM)</h4></a></i>
 <p> 
-  ขอให้เตรียมเครื่อง ubuntu 16.04.x จำนวน 4 เครื่องเชื่อมต่อกันบนเนตดังภาพที่ 1 ได้แก่เครื่องชื่อ controller network compute และ compute1 (ชื่อเครื่องต้องตรงกับผลจากคำสั่ง hostname) จากภาพกำหนดให้เครื่องที่ controller มี spec แนะนำคือ cpu 4 cores RAM 6 ถึง 8 GB Disk 16-20 GB เครื่อง network มี cpu 1-2 cores RAM 512MB-1GB Disk 8-10 GB เครื่อง compute และ compute1 มี cpu 4 cores RAM 2-4 GB Disk 16-20 GB (เป็น spec ใช้สำหรับการศึกษา ถ้าจะ deploy ขอให้ดู official OpenStck document) 
+  ขอให้เตรียมเครื่อง ubuntu 20.04.x จำนวน 4 เครื่องเชื่อมต่อกันบนเนตดังภาพที่ 1 ได้แก่เครื่องชื่อ controller network compute และ compute1 (ชื่อเครื่องต้องตรงกับผลจากคำสั่ง hostname) จากภาพกำหนดให้เครื่องที่ controller มี spec แนะนำคือ cpu 4 cores RAM 6 ถึง 8 GB Disk 16-20 GB เครื่อง network มี cpu 1-2 cores RAM 512MB-1GB Disk 8-10 GB เครื่อง compute และ compute1 มี cpu 4 cores RAM 2-4 GB Disk 16-20 GB (เป็น spec ใช้สำหรับการศึกษา ถ้าจะ deploy ขอให้ดู official OpenStck document) 
   <p>
   <img src="documents/OPS-queens-architecture.png"> <br>
    ภาพที่ 1 <br>
