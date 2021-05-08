@@ -293,7 +293,7 @@ openstack@compute1:~$
 นศ จะใช้เครื่อง controller เป็นหลักในการติดตั้งด้วย script เริ่มต้นด้วยการ login เข้า openstack user (makes sure ว่า username และ password คือ "openstack" บนทุกเครื่อง) และ download script ด้วยคำสั่ง 
 <pre>
 $ cd $HOME
-$ git clone git@github.com:kasidit/openstack-ussuri-basic-installer.git
+$ git clone https://github.com/kasidit/openstack-ussuri-basic-installer
 $ cd openstack-ussuri-basic-installer
 </pre>
 <p>
