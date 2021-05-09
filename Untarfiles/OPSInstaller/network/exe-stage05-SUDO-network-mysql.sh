@@ -6,7 +6,7 @@
 # run with sudo or as root.
 #
 #!/bin/bash -x
-cd $HOME/OPSInstaller/network; pwd
+cd /home/vasabi-1234loginname4321-ibasav/OPSInstaller/network; pwd
 printf "check chrony\n"
 chronyc sources
 #

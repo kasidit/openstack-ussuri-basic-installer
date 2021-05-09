@@ -8,7 +8,7 @@
 # run as a user
 #
 #!/bin/bash -x
-cd $HOME/OPSInstaller/controller; pwd
+cd /home/vasabi-1234loginname4321-ibasav/OPSInstaller/controller; pwd
 echo "Run this script as a sudo user."
 echo -n "1. create keystone database user..."
 #read varkey

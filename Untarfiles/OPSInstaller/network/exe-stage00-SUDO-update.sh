@@ -10,7 +10,7 @@
 #
 #!/bin/bash 
 #
-cd $HOME/OPSInstaller/network; pwd
+cd /home/vasabi-1234loginname4321-ibasav/OPSInstaller/network; pwd
 
 cp files/hosts /etc/hosts
 #cp /etc/apt/sources.list /etc/apt/sources.list.saved

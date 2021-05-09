@@ -7,7 +7,7 @@
 #
 #!/bin/bash -x
 #
-cd $HOME/OPSInstaller/controller; pwd
+cd /home/vasabi-1234loginname4321-ibasav/OPSInstaller/controller; pwd
 printf "1. inspect controller's  interface/hosts files..\n"
 #read varkey
 

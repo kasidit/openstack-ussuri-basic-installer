@@ -10,7 +10,7 @@
 #
 #!/bin/bash 
 #
-cd $HOME/OPSInstaller/compute1; pwd
+cd /home/vasabi-1234loginname4321-ibasav/OPSInstaller/compute1; pwd
 
 cp files/hosts /etc/hosts
 #cp /etc/apt/sources.list /etc/apt/sources.list.saved
