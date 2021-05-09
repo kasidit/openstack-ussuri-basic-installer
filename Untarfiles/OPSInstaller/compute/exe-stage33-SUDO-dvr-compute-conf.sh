@@ -6,7 +6,7 @@
 # run with sudo or as root.
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/compute; pwd
 
 printf "\n2. install extra agents.. \n"
 #read varkey

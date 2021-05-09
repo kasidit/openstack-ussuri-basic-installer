@@ -5,7 +5,7 @@
 #
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/controller; pwd
 echo "Run this script  as user."
 printf "\nCreate nova database tables...\n"
 

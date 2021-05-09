@@ -6,7 +6,7 @@
 # run with sudo or as root.
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/compute1; pwd
 
 cp files/nova.conf /etc/nova/nova.conf
 cp files/nova-compute.conf /etc/nova/nova-compute.conf

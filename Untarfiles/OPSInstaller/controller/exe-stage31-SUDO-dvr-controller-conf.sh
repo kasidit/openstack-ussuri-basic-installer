@@ -5,7 +5,7 @@
 #
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/controller; pwd
 echo "Run this script with sudo or as root."
 #read varkey
 

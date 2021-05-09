@@ -6,7 +6,7 @@
 # run with sudo or as root.
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/compute1; pwd
 printf "\nRun as root\n1. install nova.. press\n"
 #read varkey
 apt-get -y install nova-compute

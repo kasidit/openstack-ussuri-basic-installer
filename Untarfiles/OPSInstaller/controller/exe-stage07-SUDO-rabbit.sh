@@ -8,7 +8,7 @@
 # run or with sudo as root.
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/controller; pwd
 #
 echo -n "* install rabbitmq.. press" 
 #read varkey

@@ -9,5 +9,5 @@
 #
 # restore  sudoers
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/network; pwd
 #cp files/sudoers.save /etc/sudoers

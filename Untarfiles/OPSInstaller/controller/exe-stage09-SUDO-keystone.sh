@@ -8,7 +8,7 @@
 # run with sudo or as root.
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/controller; pwd
 #
 apt-get -y install keystone 
 #

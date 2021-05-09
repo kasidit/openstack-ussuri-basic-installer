@@ -5,7 +5,7 @@
 #
 #
 #!/bin/bash -x
-pwd
+cd $HOME/OPSInstaller/controller; pwd
 echo "Run this script as a user."
 echo -n "Get cirros image..."
 #
