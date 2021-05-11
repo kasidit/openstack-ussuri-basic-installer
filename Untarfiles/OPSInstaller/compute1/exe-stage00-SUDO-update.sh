@@ -20,6 +20,7 @@ apt-get update
 #printf "set repo and update\n"
 #apt-get -y install software-properties-common
 add-apt-repository cloud-archive:ussuri
+#add-apt-repository cloud-archive:wallaby
 #
 # assume the controller is up to date.
 #
