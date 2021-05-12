@@ -1,3 +1,4 @@
-deploy
-finish 
-next 
+This is where you record the installation progress 
+where you write down the stage number of your installation. 
+finish: ... 
+next: ... 

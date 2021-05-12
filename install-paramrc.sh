@@ -80,8 +80,8 @@ export EXTERNAL_GATEWAY_IP=10.100.20.1
 #
 # For DVR, the EXTERNAL_CIDR* of network node is the same for every compute node.
 #
-export START_FLOATING_IP=10.100.20.50
-export END_FLOATING_IP=10.100.20.150
+export START_FLOATING_IP=10.100.20.160
+export END_FLOATING_IP=10.100.20.200
 #
 # ---- compute host ----
 #
